@@ -16,5 +16,6 @@ Route::group([
     $router->resource('products', ProductController::class);
     $router->resource('comments', CommentController::class);
     $router->resource('clients', ClientController::class);
+    $router->resource('orders', OrderController::class);
 
 });

@@ -26,6 +26,8 @@ class ClientController extends AdminController
     {
         $grid = new Grid(new User());
 
+        $grid->disableCreateButton();
+
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
         $grid->column('phonenumber', __('Phone Number'));
